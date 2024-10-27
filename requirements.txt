@@ -1,0 +1,17 @@
+aiohttp
+aioshutil
+aiofiles
+anitopy
+apscheduler
+dnspython
+motor==3.3.2
+feedparser
+psutil
+pycountry
+pyrofork==2.3.19
+python-dotenv
+tgcrypto
+torrentp
+python-libtorrent
+torrentp==0.2.2
+git+https://github.com/kaif-00z/html-telegraph-poster

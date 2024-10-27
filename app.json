@@ -1,0 +1,45 @@
+{ 
+   "name": "FZXAniAdvanced", 
+   "description": "A Telegram Bot automatically Fetch, Encode & Upload Animes Using RSS & LibTorrent", 
+   "keywords": ["telegram", "files", "stream"],
+   "success_url": "/",
+   "env": { 
+     "ENV": { 
+       "description": "Set this to True if you don't want to crash the bot", 
+       "value": "True" 
+     }, 
+     "API_ID": { 
+       "description": "Get this value from https://my.telegram.org" 
+     }, 
+     "API_HASH": { 
+       "description": "Get this value from https://my.telegram.org" 
+     }, 
+     "BOT_TOKEN": { 
+       "description": "Get this value from @BotFather" 
+     }, 
+     "MONGO_URI": { 
+       "description": "Mongo DB Url to Store Anime Data" 
+     }, 
+     "MAIN_CHANNEL": { 
+       "description": "ID of Channel Where Post will be Uploaded" 
+     },
+    "FILE_STORE": { 
+       "description": "ID of Channel Where Files will be Uploaded" 
+     },
+     "ADMINS": { 
+       "description": "Your Telegram User ID as Owner" 
+     }
+   }, 
+   "buildpacks": [ 
+     { 
+       "url": "heroku/python" 
+     } 
+   ], 
+   "stack": "container", 
+   "formation": { 
+     "worker": { 
+       "quantity": 1, 
+       "size": "standard-2x" 
+     }
+   } 
+ }
